@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withSpring, withTiming } from 'react-native-reanimated'
 
@@ -45,4 +46,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default AnimatedEnteredCode
+export default memo(AnimatedEnteredCode)
